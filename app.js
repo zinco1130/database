@@ -67,7 +67,7 @@ app.get('/', (req, res) => {
        b.finishtime
        from sugang as a
        inner join weekTable as b on a.crsCode = b.crsCode
-       where num = 's1'
+       where num = 's2'
     ) as b
     where ISNULL(b.week,'') != a.week
     and convert(float, iif(isnull(a.starttime, '0.0') = '', '0.0', isnull(a.starttime, '0.0')) ) 
