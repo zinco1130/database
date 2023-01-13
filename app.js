@@ -25,15 +25,6 @@ const pool = new sql.ConnectionPool({
 //       })
 //   })
 
-// app.get('/', (request, response) => {
-// 	// const sql = "select * from sugang"
-//     pool.connect().then(() => {
-//         pool.request().query("", (err, result) => {
-//             if (err) throw err;
-//             response.send(result.recordset) //json 객체
-//         })
-//     })
-// });
 
 app.get('/', (req, res) => {
 	const sql = "select * from course"// 개설강좌
